@@ -15,11 +15,11 @@ def input_user():
 def main():
     
     nombre,edad ,estatura = input_user()
-    
-    print("="*15)
-    print("DATOS PERSONALES")
-    print("="*15)
     print("\n")
+    print("="*17)
+    print("DATOS PERSONALES")
+    print("="*17)
+   
     print(f"Su nombre es: {nombre}\nSu edad es: {edad} \nSu estatura es: {estatura}")
     
     
