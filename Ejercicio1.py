@@ -19,10 +19,10 @@ def main():
     print("="*17)
     print("DATOS PERSONALES")
     print("="*17)
-   
+
     print(f"Su nombre es: {nombre}\nSu edad es: {edad} \nSu estatura es: {estatura}")
     
     
 
 if __name__ == '__main__':
-   main()
+    main()

@@ -6,7 +6,7 @@ Muestra el resultado y explica cómo se evalúa la expresión paso a paso.
 
 """
 def calcular(numeros):
- 
+
     a = numeros[0]
     b = numeros[1]
     c =  numeros[2]
