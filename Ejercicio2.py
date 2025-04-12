@@ -22,15 +22,15 @@ def main():
         while(True):
             dato = input(f"Ingrese el numero {i}: ")
             if dato.strip() == "":
-               continue
+                continue
             else:
-             numeros.append(int(dato))
-             break
-         
+                numeros.append(int(dato))
+                break
+
     
     result = calcular(numeros=numeros)
     print(f"El resultado es {result}")         
-                
+
 
 if __name__ == "__main__":
-     main()    
+        main()    
