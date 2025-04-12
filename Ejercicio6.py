@@ -23,9 +23,9 @@ def main():
             print("Solo se permite numeros")
             continue
         elif len(nacimiento) == 4:
-             
-             edad_actual,edad_futura = calcular_edad(nacimiento=int(nacimiento),ano_actual=ano_actual)
-             print(f"La edad actual es {edad_actual}\nLa edad en 10 años es: {edad_futura}")
+            edad_actual,edad_futura = calcular_edad(nacimiento=int(nacimiento),ano_actual=ano_actual)
+            print(f"La edad actual es {edad_actual}\nLa edad en 10 años es: {edad_futura}")
+
         else:
             print("\n")
             print("Ingrese un año de nacimiento valido.")
