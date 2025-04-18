@@ -15,7 +15,7 @@ def main():
     while(True):
         texto = input("Ingrese un numero: ")
 
-        if(texto.strip() == ""):
+        if texto.strip() == "":
 
             print("\n")
             print("Debes de ingresar un numero")

@@ -4,27 +4,34 @@ muestre el nombre completo concatenado.
 """
 
 
-def obtener_texto_concatenado(nombre,apellido):
-    return f"{nombre.capitalize()} {apellido.capitalize()}"
+def obtener_texto_concatenado(informacion):
+    nombre = informacion["nombre"]
+    apellido = informacion["apellido"]
 
+    return f"Nombre completo: {nombre.capitalize()} {apellido.capitalize()}"
+
+def mostrar_resultado(informacion):
+    resultado = obtener_texto_concatenado(informacion)
+    print("="*20)
+    print("Resultado")
+    print("="*20)
+    print(resultado)
 
 def main():
+    
+    campos = ["nombre","apellido"]
+    informacion = {}
+    for campo in campos:
+        while(True):
+            dato = input(f'Ingrese su {campo}: ')
 
-    while(True):
-        nombre = input("Ingrese su nombre: ")
-        apellido = input("Ingrese su apellido: ")
-
-        if(nombre.strip() == "" or apellido.strip() == ""):
-            print("Debes de agregar un texto valido!")
-            continue
-        else:
-            resultado = obtener_texto_concatenado(nombre=nombre,apellido=apellido)
-            print("="*20)
-            print("Resultado")
-            print("="*20)
-            print(resultado)
-            break
-
+            if dato == '':
+                print("Debes de agregar un texto valido!")
+                continue
+            else:
+                informacion[campo] = dato
+                break
+    mostrar_resultado(informacion=informacion)
 
 if __name__ == "__main__":
     main()

@@ -29,7 +29,7 @@ def cierre_programa(message):
 
 def main():
 
-    cantidad = int(input("Ingrese la cantidad de productos a agrear: "))
+    cantidad = int(input("Ingrese la cantidad de productos a agregar: "))
     campos = ["nombre","precio"]
     productos = []
 

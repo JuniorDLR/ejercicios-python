@@ -31,7 +31,7 @@ def motrar_resultados(notas):
 
 def main():
     
-    campos = ["tareas","examen parcial","examen final"]
+    campos = ["tarea","examen parcial","examen final"]
     nota = {}
     for campo in campos:
         while True:
@@ -41,7 +41,7 @@ def main():
                 print("Campo vacio, intenta de nuevo!")
                 continue
 
-            if campo == "tareas" or campo == "examen parcial" or campo == "examen final":
+            if campo == "tarea" or campo == "examen parcial" or campo == "examen final":
                 try:
                     if float(dato) >= 0 and float(dato) <=100:
                         dato = float(dato)

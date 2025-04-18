@@ -16,7 +16,7 @@ def main():
     ano_actual = datetime.now().year
 
     while(True):
-        nacimiento  = input("Ingrese su el ano de nacimiento: ")
+        nacimiento  = input("Ingrese su  ano de nacimiento: ")
         
         if not nacimiento.isdigit():
             print("\n")
