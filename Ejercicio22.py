@@ -26,9 +26,9 @@ def mostrar_resultados(mapaInfo):
 
     nombreTrabajador,sueldoBruto,impuesto,salario = calcular_salario(mapaInfo)
 
-    print("="*20)
+    print("="*15)
     print("     RESULTADOS     ")
-    print("="*20)
+    print("="*15)
     print(f"Nombre del trabajador:        {nombreTrabajador}")
     print(f"Sueldo bruto:                ${sueldoBruto}")
     print(f"Impuesto por renta:          ${impuesto}")
